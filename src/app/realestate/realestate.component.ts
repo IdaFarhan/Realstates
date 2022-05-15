@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import * as Data from '../input.json';  
+
+
 
 @Component({
   selector: 'app-realestate',

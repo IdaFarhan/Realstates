@@ -1,1 +1,26 @@
-<p>realestate works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h3>welcome to your realstate</h3> 
+      <h1>Buy A Home By Confidence</h1>
+      <h2>Reliable Sustainable Mortgage Provider</h2>
+    </div>
+    <div class="col-6">
+      <img src="../../assets/images/banner-main.png" alt="Banner" width="100%">
+    </div>
+  </div>
+</div>
+<table class="">
+  <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let realestate of realEstates.data">
+      <td>{{ realestate.price }}</td>
+      <td>{{ realestate.title }}</td>
+    </tr>
+  </tbody>
+</table>

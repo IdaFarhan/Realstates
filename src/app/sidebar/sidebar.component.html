@@ -1,0 +1,54 @@
+  
+  <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center">
+              <button mat-icon-button>
+                <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+              </button>
+              <span class="menu-spacer"></span>
+              <div>
+                <a mat-button> Accounts </a>
+                <a mat-button > Create Account </a>
+                <a mat-button > Contacts </a>
+                <a mat-button > Create Contact </a>
+                <a mat-button > Activities </a>
+                <a mat-button > Create Activity </a>
+          
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </mat-toolbar-row>
+    
+      <!-- <mat-toolbar-row>
+          <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
+        </mat-toolbar-row> -->
+    </mat-toolbar>
+    
+  <mat-sidenav-container>
+  <mat-sidenav #sidenav>
+        <mat-nav-list>
+    
+          <a mat-list-item > Accounts </a>
+          <a mat-list-item > Create Account </a>
+          <a mat-list-item > Contacts </a>
+          <a mat-list-item > Create Contact </a>
+          <a mat-list-item > Activities </a>
+          <a mat-list-item > Create Activity </a>
+          <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+    
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <div>
+            <app-realestate></app-realestate>  
+        </div>
+      </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+  
+  

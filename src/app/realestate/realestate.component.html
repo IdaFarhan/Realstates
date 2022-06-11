@@ -1,26 +1,146 @@
-<div class="container">
+<div class="container my-5 pt-5">
   <div class="row">
-    <div class="col-6">
+    <div class="col-6 d-flex flex-column justify-content-center">
       <h3>welcome to your realstate</h3> 
       <h1>Buy A Home By Confidence</h1>
       <h2>Reliable Sustainable Mortgage Provider</h2>
+      <mat-card>
+      <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Interested</mat-label>
+          <input matInput value="Google">
+        </mat-form-field>
+      
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>First name</mat-label>
+            <input matInput>
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Last Name</mat-label>
+            <input matInput>
+          </mat-form-field></td>
+        </tr></table>
+      
+        <p>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Address</mat-label>
+            <textarea matInput placeholder="Ex. 100 Main St"></textarea>
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Address 2</mat-label>
+            <textarea matInput></textarea>
+          </mat-form-field>
+        </p>
+      
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>State</mat-label>
+            <input matInput>
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>City</mat-label>
+            <input matInput>
+          </mat-form-field></td>
+        </tr></table>
+        <button mat-stroked-button class="button-form">Send</button>
+      </form>
+    </mat-card>
+
     </div>
-    <div class="col-6">
+    <div class="col-6 d-flex flex-column justify-content-center">
       <img src="../../assets/images/banner-main.png" alt="Banner" width="100%">
     </div>
   </div>
 </div>
-<table class="">
-  <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-      </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let realestate of realEstates.data">
-      <td>{{ realestate.price }}</td>
-      <td>{{ realestate.title }}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="expect p-5">
+  <div class="container">
+    <div class="text-center text-white">
+      <span class="text-center text-green "> # WHAT'S YOU EXPECT</span>
+      <h2>We Have Offer To You</h2> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed diusmod mlaboret dolore magnad minim veniamquaera</p> 
+    </div>
+    
+    <ngb-carousel >
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper row">
+          <div class="col-3 "><mat-card class="p-5 card-expect">
+            <span class="material-icons mb-4 "> volunteer_activism </span>
+              <mat-card-title class="mb-3">Renovation For Buyers</mat-card-title>
+              <p>Lorem ipsum dolor sit amet.</p>
+          </mat-card></div>
+          <div class="col-3"><mat-card class="p-5 card-expect">
+            <span class="material-icons mb-4"> paid</span>
+            <mat-card-title class="mb-3">High Balance Mortgage</mat-card-title>
+              <p>Lorem ipsum dolor sit amet.</p>
+          </mat-card></div>
+          <div class="col-3"><mat-card class="p-5 card-expect">
+            <span class="material-icons mb-4">maps_home_work</span>
+            <mat-card-title class="mb-3">A Conventional Home</mat-card-title>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </mat-card></div>
+          <div class="col-3"><mat-card class="p-5 card-expect">
+            <span class="material-icons mb-4">query_builder </span>
+            <mat-card-title class="mb-3">Lorem ipsum dolor sit</mat-card-title>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </mat-card></div>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div>
+
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-3 mb-4"  *ngFor="let realestate of displayedItems">
+      <mat-card class="example-card">
+        <mat-card-header class="mb-3">
+          <div mat-card-avatar class="example-header-image rounded"><span class="material-icons rounded" style="font-size:3em;color:white;background: linear-gradient(90deg,#10c317 23%,#15d09a 64%);">
+            real_estate_agent
+            </span></div>
+          <mat-card-subtitle>{{ realestate.title }}</mat-card-subtitle>
+          <mat-card-title>{{ realestate.price }}</mat-card-title>
+        </mat-card-header>
+        <a href="{{realestate.url}}"> <img mat-card-image src="{{realestate.image}}" alt="realstate" height="200"> </a> 
+        <mat-card-content>
+          <p>{{realestate.location}}  {{realestate.house}}</p>
+          <div >
+            <ul class="d-flex justify-content-around">  
+              <li class="">{{realestate.bd }}</li> 
+              <li class="">{{realestate.ba}}</li>
+              <li class="">{{realestate.ft}}</li>
+            </ul>
+          </div>
+        </mat-card-content>
+        
+      </mat-card>
+    </div>
+    <mat-paginator [pageSizeOptions]="[4, 8, 12]"
+    showFirstLastButtons 
+    aria-label="Select page of periodic elements">
+  </mat-paginator>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <img src="../../assets/images/about-main (1).png" alt="about">
+    </div>
+    <div class="col-6">
+    <span># ABOUT US</span>  
+    <h2>We Are Fully Dedicated To Support You</h2> 
+ OUR MISSION
+ OUR VISION
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamquaerat.
+
+ Respect for all people
+ Excellence in everything we do
+ Truthfulness in our business
+    </div>
+  </div>
+</div>
+
+

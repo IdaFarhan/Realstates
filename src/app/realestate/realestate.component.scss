@@ -112,3 +112,23 @@ h3{
 .line-title{
   line-height: 1.2;
 }
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  h1{
+    font-size: 2.5em!important;
+  }
+  h2{
+    font-size: 1.5em!important;
+  }
+  .services img {
+    width: 83%;
+    height: 250px;
+  }
+  .boton-services {
+    width: 55%;
+  }
+}
+body {
+  overflow-x: hidden!important; /* Hide horizontal scrollbar */
+}

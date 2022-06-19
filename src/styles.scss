@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: "Montserrat", "Helvetica Neue", sans-serif; }
+body,h2,p,h3,h1 { margin: 0; font-family: "Montserrat", "Helvetica Neue", sans-serif!important;}
+
 .mat-toolbar{
     background: linear-gradient(90deg,#10c317 23%,#15d09a 64%)!important;
 }
@@ -10,4 +11,17 @@ body { margin: 0; font-family: "Montserrat", "Helvetica Neue", sans-serif; }
 @import '~bootstrap/scss/bootstrap';
 .expect .carousel-indicators, .carousel-control-prev, .carousel-control-next{
     display: none!important;
+  }
+  .paginator-house .mat-select-arrow{
+    color: white!important;
+  }
+  .paginator-house .mat-select-value{
+    color: white;
+  }
+  .paginator-house{
+    color: white;
+    border-color: white;
+  }
+  .mat-sidenav{
+    width: 250px;
   }

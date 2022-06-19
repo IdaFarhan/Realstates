@@ -31,8 +31,12 @@ h3{
   }
   .expect{
     background: #0d1820;
+    padding: 5% 0%;
   }
- 
+  .expect h2{
+    font-size: 3em;
+    padding: 1% 0;
+  }
   .card-expect{
     background: #1f313e;
     color: white;
@@ -60,4 +64,51 @@ h3{
     position: relative;
     margin-bottom: 5px;
 }
-  
+
+.houses{
+  padding: 5% 0;
+}
+.about{
+  padding: 2% 0 7%;
+  p{
+    font-size: 1.2em;
+  }
+}
+.boton-1{
+  margin-right: 3%;
+  height: 50px;
+  width: 35%;
+  border: 2px solid #10c317;
+  background: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif!important;
+  font-weight: bolder;
+}
+.boton-2{
+  height: 50px;
+  width: 35%;
+  border: 2px solid #10c317;
+  background: #10c317;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif!important;
+  font-weight: bolder;
+}
+.boton-services{
+  height: 40px;
+  width: 25%;
+  border: 2px solid #10c317;
+  background: #10c317;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif!important;
+  font-weight: bolder;
+}
+.sizebold{
+  font-size: 3em;
+  font-weight: bold!important;
+}
+.line-title{
+  line-height: 1.2;
+}

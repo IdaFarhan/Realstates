@@ -1,89 +1,106 @@
 <div class="container my-5 pt-5">
   <div class="row">
     <div class="col-6 d-flex flex-column justify-content-center">
-      <h3>welcome to your realstate</h3> 
+      <h3 class="text-green">welcome to your realstate</h3>
       <h1>Buy A Home By Confidence</h1>
-      <h2>Reliable Sustainable Mortgage Provider</h2>
-      <mat-card>
-      <form class="example-form">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Interested</mat-label>
-          <input matInput value="Google">
-        </mat-form-field>
-      
-        <table class="example-full-width" cellspacing="0"><tr>
-          <td><mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>First name</mat-label>
-            <input matInput>
-          </mat-form-field></td>
-          <td><mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Last Name</mat-label>
-            <input matInput>
-          </mat-form-field></td>
-        </tr></table>
-      
-        <p>
+      <h2 class="">Reliable Sustainable Mortgage Provider</h2>
+      <mat-card class="p-4">
+        <form class="example-form" class="w-100">
           <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Address</mat-label>
-            <textarea matInput placeholder="Ex. 100 Main St"></textarea>
+            <mat-label>Interested</mat-label>
+            <input matInput value="Google">
           </mat-form-field>
-          <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Address 2</mat-label>
-            <textarea matInput></textarea>
-          </mat-form-field>
-        </p>
-      
-        <table class="example-full-width" cellspacing="0"><tr>
-          <td><mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>State</mat-label>
-            <input matInput>
-          </mat-form-field></td>
-          <td><mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>City</mat-label>
-            <input matInput>
-          </mat-form-field></td>
-        </tr></table>
-        <button mat-stroked-button class="button-form">Send</button>
-      </form>
-    </mat-card>
-
+          <table class="example-full-width" cellspacing="0">
+            <tr>
+              <td>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>First name</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </td>
+              <td class="p-0">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Last Name</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+          <p>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Address</mat-label>
+              <textarea matInput placeholder="Ex. 100 Main St"></textarea>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Address 2</mat-label>
+              <textarea matInput></textarea>
+            </mat-form-field>
+          </p>
+          <table class="example-full-width" cellspacing="0">
+            <tr>
+              <td>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>State</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </td>
+              <td class="p-0">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>City</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+          <button mat-stroked-button class="button-form">Send</button>
+        </form>
+      </mat-card>
     </div>
     <div class="col-6 d-flex flex-column justify-content-center">
       <img src="../../assets/images/banner-main.png" alt="Banner" width="100%">
     </div>
   </div>
 </div>
-<div class="expect p-5">
+
+<div class="expect">
   <div class="container">
-    <div class="text-center text-white">
-      <span class="text-center text-green "> # WHAT'S YOU EXPECT</span>
-      <h2>We Have Offer To You</h2> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed diusmod mlaboret dolore magnad minim veniamquaera</p> 
+    <div class="text-center text-white pb-5">
+      <span class="text-center text-green mb-3"> # WHAT'S YOU EXPECT</span>
+      <h2 class="sizebold">We Have Offer To You</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed diusmod mlaboret dolore magnad minim
+        veniamquaera</p>
     </div>
-    
-    <ngb-carousel >
+    <ngb-carousel>
       <ng-template ngbSlide>
         <div class="picsum-img-wrapper row">
-          <div class="col-3 "><mat-card class="p-5 card-expect">
-            <span class="material-icons mb-4 "> volunteer_activism </span>
+          <div class="col-3 ">
+            <mat-card class="p-5 card-expect">
+              <span class="material-icons mb-4 "> volunteer_activism </span>
               <mat-card-title class="mb-3">Renovation For Buyers</mat-card-title>
               <p>Lorem ipsum dolor sit amet.</p>
-          </mat-card></div>
-          <div class="col-3"><mat-card class="p-5 card-expect">
-            <span class="material-icons mb-4"> paid</span>
-            <mat-card-title class="mb-3">High Balance Mortgage</mat-card-title>
+            </mat-card>
+          </div>
+          <div class="col-3">
+            <mat-card class="p-5 card-expect">
+              <span class="material-icons mb-4"> paid</span>
+              <mat-card-title class="mb-3">High Balance Mortgage</mat-card-title>
               <p>Lorem ipsum dolor sit amet.</p>
-          </mat-card></div>
-          <div class="col-3"><mat-card class="p-5 card-expect">
-            <span class="material-icons mb-4">maps_home_work</span>
-            <mat-card-title class="mb-3">A Conventional Home</mat-card-title>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </mat-card></div>
-          <div class="col-3"><mat-card class="p-5 card-expect">
-            <span class="material-icons mb-4">query_builder </span>
-            <mat-card-title class="mb-3">Lorem ipsum dolor sit</mat-card-title>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </mat-card></div>
+            </mat-card>
+          </div>
+          <div class="col-3">
+            <mat-card class="p-5 card-expect">
+              <span class="material-icons mb-4">maps_home_work</span>
+              <mat-card-title class="mb-3">A Conventional Home</mat-card-title>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </mat-card>
+          </div>
+          <div class="col-3">
+            <mat-card class="p-5 card-expect">
+              <span class="material-icons mb-4">query_builder </span>
+              <mat-card-title class="mb-3">Lorem ipsum dolor sit</mat-card-title>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </mat-card>
+          </div>
         </div>
       </ng-template>
     </ngb-carousel>
@@ -92,55 +109,152 @@
 
 
 
-<div class="container mt-5">
+<div class="container houses">
   <div class="row">
-    <div class="col-3 mb-4"  *ngFor="let realestate of displayedItems">
+    <h3 class="text-green text-center"># WHAT'S YOUR FAVORITE</h3>
+    <h2 class="pt-2 pb-5 sizebold text-center line-title">Reliable Sustainable <br> Mortgage Provider</h2>
+    <div class="col-3 mb-4" *ngFor="let realestate of displayedItems">
       <mat-card class="example-card">
         <mat-card-header class="mb-3">
-          <div mat-card-avatar class="example-header-image rounded"><span class="material-icons rounded" style="font-size:3em;color:white;background: linear-gradient(90deg,#10c317 23%,#15d09a 64%);">
-            real_estate_agent
+          <div mat-card-avatar class="example-header-image rounded"><span class="material-icons rounded"
+              style="font-size:3em;color:white;background: linear-gradient(90deg,#10c317 23%,#15d09a 64%);">
+              real_estate_agent
             </span></div>
           <mat-card-subtitle>{{ realestate.title }}</mat-card-subtitle>
           <mat-card-title>{{ realestate.price }}</mat-card-title>
         </mat-card-header>
-        <a href="{{realestate.url}}"> <img mat-card-image src="{{realestate.image}}" alt="realstate" height="200"> </a> 
+        <a href="{{realestate.url}}"> <img mat-card-image src="{{realestate.image}}" alt="realstate" height="200"> </a>
         <mat-card-content>
-          <p>{{realestate.location}}  {{realestate.house}}</p>
-          <div >
-            <ul class="d-flex justify-content-around">  
-              <li class="">{{realestate.bd }}</li> 
+          <p>{{realestate.location}} {{realestate.house}}</p>
+          <div>
+            <ul class="d-flex justify-content-around">
+              <li class="">{{realestate.bd }}</li>
               <li class="">{{realestate.ba}}</li>
               <li class="">{{realestate.ft}}</li>
             </ul>
           </div>
         </mat-card-content>
-        
       </mat-card>
     </div>
-    <mat-paginator [pageSizeOptions]="[4, 8, 12]"
-    showFirstLastButtons 
-    aria-label="Select page of periodic elements">
-  </mat-paginator>
+    <mat-paginator [pageSizeOptions]="[4, 8, 12]" showFirstLastButtons aria-label="Select page of periodic elements"
+      class="bg-dark text-white paginator-house">
+    </mat-paginator>
   </div>
 </div>
 
-<div class="container">
+<div class="container about">
   <div class="row">
     <div class="col-6">
-      <img src="../../assets/images/about-main (1).png" alt="about">
+      <img src="../../assets/images/faq.png" alt="about" width="100%">
     </div>
-    <div class="col-6">
-    <span># ABOUT US</span>  
-    <h2>We Are Fully Dedicated To Support You</h2> 
- OUR MISSION
- OUR VISION
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamquaerat.
-
- Respect for all people
- Excellence in everything we do
- Truthfulness in our business
+    <div class="col-6 d-flex flex-column justify-content-center">
+      <span class="text-green"># ABOUT US</span>
+      <h2 class="sizebold line-title pb-4">We Are Fully Dedicated To Support You</h2>
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <p>Lorem ipsum dolor sit amet.</p> 
+            </mat-panel-title>
+            <mat-panel-description>
+              <p>Lorem ipsum dolor.</p> 
+              <mat-icon class="pl-3 text-green">account_circle</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <p>Lorem ipsum dolor sit amet.</p> 
+            </mat-panel-title>
+            <mat-panel-description>
+              <p>Lorem ipsum dolor.</p> 
+              <mat-icon class="text-green">map</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <p>Lorem ipsum dolor sit amet.</p> 
+            </mat-panel-title>
+            <mat-panel-description>
+              <p>Lorem ipsum dolor</p> 
+              <mat-icon class="text-green">date_range</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+      </mat-accordion>
     </div>
   </div>
 </div>
 
+<div class="container bg-dark rounded p-4 text-white">
+  <div class="row">
+    <div class="col-8 d-flex flex-column mt-2">
+      <span class="text-green"># GET A QUOTE</span>
+      <h2 class="">Get Mortgage Quote If You have any Doubt It</h2>
+    </div>
+    <div class="col-4 d-flex justify-content-end align-items-center text-left">
+      <button mat-raised-button class="boton-1">Primary</button>
+      <button mat-raised-button color="accent" class="boton-2">Accent</button>
+    </div>
+  </div>
+</div>
 
+<div class="container my-5 pb-5">
+  <div class="row">
+    <div class="col-12 text-center mt-5 mb-3">
+      <span class="text-green"># CHOOSE YOUR SERVICE</span>
+      <h2 class="pt-2 pb-5 sizebold text-center line-title">Nearly We Have Been <br> Trying To Provide Those</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 pr-4">
+      <mat-card class="p-5">
+        <div class="text-center">
+          <img src="../../assets/images/service1.png" alt="Services" height="350px">
+        </div>
+
+        <span class="text-green my-3">Auto Dealer Solutions</span>
+        <p>Lorem ipsum dolor sit ametconsecteturing elit sed do eiusmod tempor incididunt laboret dolore magna aliqua
+          minaquaerat.</p>
+        <ul>
+          <li> Affordable Car Calculator</li>
+          <li>Auto Financing Center</li>
+          <li>Valley All Access Rewards</li>
+        </ul>
+        <button mat-raised-button class="boton-services">Buy Now</button>
+      </mat-card>
+    </div>
+    <div class="col-6">
+      <mat-card class="p-5">
+        <div class="text-center">
+          <img src="../../assets/images/service2.png" alt="Services" height="350px">
+        </div>
+        <span class="text-green my-3">Floor Plan Financing</span>
+        <p>Ryun ipsum dolor sit ametconsecteturing elit sed do eiusmod tempor incididunt laboret dolore magna aliqua
+          minaquaerat.</p>
+        <ul>
+          <li>Dealership to The Next Level</li>
+          <li>Financing Option For Your Dealership</li>
+          <li>Business Insight Center</li>
+        </ul>
+        <button mat-raised-button class="boton-services">Learn More</button>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+<div class="mt-5 bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-white text-center pt-5 pb-4">
+        <p>Copyright 2022 © all rights reserved</p>
+      </div>
+    </div>
+  </div>
+</div>
